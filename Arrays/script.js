@@ -63,4 +63,4 @@ console.log(heros);
 //shift array methods
 let weapon = ["hammer", "traps", "iron"];
 let val = weapon.shift();
-console.log("deleted weapon is",val);
+console.log("deleted weapon is", val);
