@@ -64,3 +64,22 @@ console.log(heros);
 let weapon = ["hammer", "traps", "iron"];
 let val = weapon.shift();
 console.log("deleted weapon is", val);
+
+//slice array methods
+let glasses = ["concave", "convex", "both"];
+console.log(glasses);
+console.log(glasses.slice(0,2));
+
+//splice array methods
+let arr = [1, 2, 3, 4, 5, 6, 7];
+arr.splice(2, 2, 101, 102);
+
+//practice question
+let store_companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+console.log(store_companies.slice(1));
+
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+companies.splice(2,1,"Ola");
+
+let store = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+store.push("Amazon");
