@@ -42,4 +42,4 @@ const arrowmultip = (a, b) =>{
  console.log(a*b); 
 };
 
-
+//to be continue
