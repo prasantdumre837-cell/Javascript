@@ -42,4 +42,31 @@ const arrowmultip = (a, b) =>{
  console.log(a*b); 
 };
 
-//to be continue
+const printHello = () =>{
+    console.log("Hello boy");
+};
+
+//practice questions
+function countVowels(str){
+    let count = 0;
+    for(const char of str){
+       if(char == "a"|| char == "e" || char == "i" || char == "o" || char == "u"){
+        count ++ ;
+       }
+    
+    }
+    return(count);
+}
+
+//practice
+const countVow = (str) => {
+let count = 0;
+    for(const char of str){
+       if(char == "a"|| char == "e" || char == "i" || char == "o" || char == "u"){
+        count ++ ;
+       }
+    
+    }
+    return(count);
+
+};
