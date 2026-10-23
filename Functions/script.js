@@ -78,3 +78,15 @@ arr.forEach((val, i, arr) => {
     console.log(val.toUpperCase(), i, arr);
 });
 
+//practice Qns to print square of given array numbers
+let num = [100, 223, 389, 409 , 505];
+num.forEach ((num) => {
+    console.log(num * num);
+});
+
+//map array function
+let nums = [34, 45, 67];
+let newArr = nums.map((val) =>{
+    return val * val ;
+});
+console.log(newArr);
