@@ -84,9 +84,56 @@ num.forEach ((num) => {
     console.log(num * num);
 });
 
-//map array function
+//map array methods
 let nums = [34, 45, 67];
 let newArr = nums.map((val) =>{
     return val * val ;
 });
 console.log(newArr);
+
+//filter array methods
+let array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+let newarr = array.filter((val) =>{
+    return val % 2 === 0;
+});
+console.log(newarr);
+
+//reduce array methods
+let items = [1,2,3,4,5];
+const output = items.reduce((prev, curr) => {
+    return prev + curr;
+});
+console.log(output);
+
+//finding largest number in an array using reduce array merthods
+let larnum = [1,2,3,4,5];
+const result = larnum.reduce((prev, curr) => {
+    return prev > curr ? prev : curr
+});
+console.log(result);
+
+//practice Qns to filter students who scored equal to and greater than 90.
+let marks = [87, 89, 99, 90, 93, 80];
+let newmarks = marks.filter((val) => {
+    return val >= 90;
+});
+console.log(newmarks);
+
+//practice Qns
+let n = prompt("enter a number:");
+let arrr = [];
+for(let i = 1; i <= n; i++){
+    arrr[i-1] = i;
+}
+console.log(arrr);
+
+ sum = arrr.reduce((res, curr) => {
+ 
+    return res + curr;
+});
+console.log("sum =", sum);
+factorial= arrr.reduce((res, curr) => {
+ 
+    return res * curr;
+});
+console.log("factorial =", factorial);
