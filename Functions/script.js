@@ -70,3 +70,11 @@ let count = 0;
     return(count);
 
 };
+
+
+//forEach loop
+let arr = ["ktm", "Butwal", "Waling"];
+arr.forEach((val, i, arr) => {
+    console.log(val.toUpperCase(), i, arr);
+});
+
