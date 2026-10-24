@@ -17,3 +17,5 @@ console.dir(firstElement);
 // console.dir(allElement);
 
 console.dir(document.body.firstChild);
+
+//to be continue from DOM properties
