@@ -16,6 +16,8 @@ console.dir(firstElement);
 // let allElement = document.querySelectorAll(".heading");
 // console.dir(allElement);
 
+//DOM properties
 console.dir(document.body.firstChild);
 
-//to be continue from DOM properties
+let heading = document.querySelector("h1");
+
