@@ -24,6 +24,11 @@ console.log(newButton);
 
 let div = document.querySelector("div");
 div.append(newButton);
+div.prepend(newButton);
+div.before(newButton);
+div.after(newButton);
 
+let para = document.querySelector("p");
+para.remove();
 
 
