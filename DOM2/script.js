@@ -5,9 +5,9 @@
 // console.log(id);
 
 
-let para  = document.querySelector("p");
-console.log(para.getAttribute("class"));
-console.log(para.setAttribute("class", "section"));
+// let para  = document.querySelector("p");
+// console.log(para.getAttribute("class"));
+// console.log(para.setAttribute("class", "section"));
 
 //accesing style of div
 // let div = document.querySelector("div");
