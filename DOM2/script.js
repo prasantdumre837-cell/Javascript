@@ -10,9 +10,20 @@ console.log(para.getAttribute("class"));
 console.log(para.setAttribute("class", "section"));
 
 //accesing style of div
-let div = document.querySelector("div");
+// let div = document.querySelector("div");
 
-div.style.backgroundColor = "red";
-div.style.fontSize = "15px";
-div.innerText = "JavaScript";
-div.style.visibility = "hidden";
+// div.style.backgroundColor = "cyan";
+// div.style.fontSize = "15px";
+// div.innerText = "JavaScript";
+// div.style.visibility = "hidden";
+
+//insert elememts
+let newButton = document.createElement("button");
+newButton.innerText = "click here";
+console.log(newButton);
+
+let div = document.querySelector("div");
+div.append(newButton);
+
+
+

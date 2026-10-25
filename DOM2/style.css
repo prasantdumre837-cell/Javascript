@@ -1,11 +1,11 @@
 #circle{
     color : cyan;
-    height : 150px;
-    width : 78px;
+    height : 250px;
+    width : 150px;
     background-color: aqua;
-    color : brown;
+    color : black;
     text-align: center;
-    border : 1px solid black;
+    border : 2px solid black;
     margin : 10px;
 
 }
