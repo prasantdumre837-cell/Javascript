@@ -8,3 +8,4 @@ document.querySelector("body").prepend(newButton);
 
 
 //second practice question
+let para = document.querySelector("p");
