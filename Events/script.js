@@ -16,26 +16,40 @@ div.onmouseover = () => {
 
 
 //event object
-btn1.onclick = (e) => {
-    console.log(e);
-    console.log(e.type);
-    console.log(e.target);
-    console.log(e.clientX, e.clientY);
+// btn1.onclick = (e) => {
+//     console.log(e);
+//     console.log(e.type);
+//     console.log(e.target);
+//     console.log(e.clientX, e.clientY);
 
+// };
+
+
+// btn2.ondblclick = (e) => {
+//      console.log(e);
+//     console.log(e.type);
+//     console.log(e.target);
+//     console.log(e.clientX, e.clientY);
+// };
+
+// div.onmouseover = (e) => {
+//     console.log(e);
+//     console.log(e.type);
+//     console.log(e.target);
+//     console.log(e.clientX, e.clientY);
+// };
+
+
+//Event listeners
+btn1.addEventListener("click", () => {
+    console.log("You clicked button 1");
+});
+
+const congrats = () => {
+    console.log("Wow congrats!");
 };
 
+btn1.addEventListener("click", congrats);
 
-btn2.ondblclick = (e) => {
-     console.log(e);
-    console.log(e.type);
-    console.log(e.target);
-    console.log(e.clientX, e.clientY);
-};
-
-div.onmouseover = (e) => {
-    console.log(e);
-    console.log(e.type);
-    console.log(e.target);
-    console.log(e.clientX, e.clientY);
-};
-
+//Event Listener removal
+btn1.removeEventListener("click", congrats);
