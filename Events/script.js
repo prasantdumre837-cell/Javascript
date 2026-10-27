@@ -15,3 +15,27 @@ div.onmouseover = () => {
 };
 
 
+//event object
+btn1.onclick = (e) => {
+    console.log(e);
+    console.log(e.type);
+    console.log(e.target);
+    console.log(e.clientX, e.clientY);
+
+};
+
+
+btn2.ondblclick = (e) => {
+     console.log(e);
+    console.log(e.type);
+    console.log(e.target);
+    console.log(e.clientX, e.clientY);
+};
+
+div.onmouseover = (e) => {
+    console.log(e);
+    console.log(e.type);
+    console.log(e.target);
+    console.log(e.clientX, e.clientY);
+};
+
