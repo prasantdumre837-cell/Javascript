@@ -18,6 +18,14 @@ const winpatterns = [
     [6, 7, 8],
 ];
 
+
+const resetGame = () =>{
+    turn0 = true;
+}
+
+
+
+
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         console.log("Wow! Box was clicked");
@@ -33,9 +41,18 @@ boxes.forEach((box) => {
     });
 });
 
+
+const disableBoxes = () => {
+    for(let box of boxes){
+      box.disabled = true; 
+    }
+}
+
+
 const showWinner = (winner) => {
     msg.innerText = `Congratulations, winner is ${winner}`;
     msgcontainer.classList.remove("hide");
+    disableBoxes();
 }
 
 const checkWinner = () => {
@@ -53,3 +70,4 @@ const checkWinner = () => {
         }
     }
 };
+
