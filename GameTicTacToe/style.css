@@ -46,3 +46,20 @@ body{
     border : none;
 }
 
+#newgame-button{
+    padding : 1rem;
+    font-size : 1.28rem;
+    background-color: #14213d;
+    color : white;
+    border-radius : 1rem;
+    border : none;
+}
+
+#msg{
+    color : white;
+    font-size : 9vmin;
+}
+
+.msg-container{
+    height : 30vmin;
+}
