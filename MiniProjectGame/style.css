@@ -14,11 +14,15 @@ h1{
 .choice{
     height: 165px;
     width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .choice:hover{
     opacity : 0.5;
-    cursor : pointer;
+    background-color: #081b31;
 }
 
 img{
@@ -34,5 +38,32 @@ img{
     align-items : center;
     gap : 3rem;
     margin-top: 6rem;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap : 130px;
+    margin-top: 50px;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+}
+
+.msg-container{
+    margin-top: 2rem; 
+}
+
+#msg{
+    background-color: #081b08;
+    color: white;
+    font-size: 40px;
+    height : 4rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 50%;
 }
 
