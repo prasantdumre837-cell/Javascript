@@ -5,12 +5,15 @@ const choices = document.querySelectorAll(".choice");
 
 const genCompChoice = () => {
     const options = ["rock", "paper", "scissors"];
-    Math.random();
+    const randomIdx = Math.floor(Math.random() * 3);
+    return options [randomIdx];
 }
 
 
 const playGame = () => {
-    console.log("user choice =", userChoice);
+ 
+    const compChoice = genCompChoice();
+    console.log(compChoice, "is of computer choice");
 }
 
 
