@@ -13,19 +13,19 @@ const genCompChoice = () => {
 
 const drawGame = () => {
     console.log("Game was a Draw");
-    msg.innerText = "Game was a Draw";
+    msg.innerText = "Draw, Try again.";
     msg.style.backgroundColor = "brown";
     
 }
 
-const showWinner = (userWin) => {
+const showWinner = (userWin, userChoice, compChoice) => {
     if(userWin){
         console.log("You are a Winner!");
-        msg.innerText = "You are a Winner!";
+        msg.innerText = `You Won! your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor = "green";
     }else{
-        console.log("You Lose, Try again");
-        msg.innerText = "You Lose, Try again";
+        console.log("You Lost, Try again");
+        msg.innerText = `You Lost! ${compChoice} beats your ${userChoice}`;
         msg.style.backgroundColor = "red";
     }
 }
@@ -49,7 +49,7 @@ const playGame = (userChoice) => {
         }else{
             userWin = compChoice === "rock" ? false : true;   //computer selecting rock and paper
         }
-        showWinner(userWin);
+        showWinner(userWin, userChoice, compChoice);
     }
 }
 
