@@ -38,6 +38,7 @@ img{
     align-items : center;
     gap : 3rem;
     margin-top: 6rem;
+    cursor: pointer;
 }
 
 .score-board{
