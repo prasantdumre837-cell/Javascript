@@ -14,15 +14,19 @@ const genCompChoice = () => {
 const drawGame = () => {
     console.log("Game was a Draw");
     msg.innerText = "Game was a Draw";
+    msg.style.backgroundColor = "brown";
+    
 }
 
 const showWinner = (userWin) => {
     if(userWin){
         console.log("You are a Winner!");
         msg.innerText = "You are a Winner!";
+        msg.style.backgroundColor = "green";
     }else{
         console.log("You Lose, Try again");
         msg.innerText = "You Lose, Try again";
+        msg.style.backgroundColor = "red";
     }
 }
 
