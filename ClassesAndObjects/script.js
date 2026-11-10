@@ -6,3 +6,5 @@ const student = {
         console.log("marks = ", this.marks);
     },
 };
+
+//js objects have a special property called prototype.
