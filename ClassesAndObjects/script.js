@@ -16,5 +16,7 @@ const employee = {
 };
 
 const ram = {
-    salary : 
-}
+    salary : 50000,
+};
+
+ram.__proto__ = employee;
